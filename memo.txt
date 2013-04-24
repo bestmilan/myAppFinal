@@ -1,0 +1,42 @@
+﻿Q1:	
+	ie无法启动
+A1:	
+	设置好编译级别
+Q2:	
+	com.thoughtworks.selenium.SeleniumException: no protocol: 
+	Caused by: java.net.MalformedURLException: no protocol: 
+A2:
+	GenericRemoteWebDriver中
+	_commandProcessor = new WebDriverCommandProcessor("http://www.baidu.com", this._webDriver); 
+Q3:
+	第三方JAR包从私服下载后class无法使用
+A3:
+	上传第三方JAR包时jar和pom一起上传，下载时先clean一下，再install
+Q4:
+	几种等待的区别
+A4:
+	1:页面等待：
+		waitForComplete();_commandProcessor.doCommand("waitForPageToLoad"
+	2:操作等待：
+		Utils.waitForOperationComplete	
+	3：等待元素
+		waitForElementPresent
+Q5:
+	dataProvider和parameter
+A5:
+	不能公用
+Q6:
+	hudson变更根目录
+A6:
+	环境变量增加HUDSON_HOME
+Q7:
+	跳过测试
+A7:
+	clean  package -DskipTests
+Q8:
+	dbuint:export
+A8:
+	run->maven build->dbunit:export	-Ddest=dataXml/export/export.xml
+	dbunit:operation
+	dbunit:compare
+	

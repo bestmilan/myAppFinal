@@ -1,0 +1,99 @@
+[0.001][INFO]:      ChromeDriver 23.0.1240.0 D:\workspace_self\my-app\target\classes\chromedriver.exe
+[1.057][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [ "--start-maximized", "--activate-on-launch", "--homepage=about:blank", "--no-first-run", "--disable-hang-monitor", "--disable-popup-blocking", "--disable-prompt-on-repost", "--no-default-browser-check", "--disable-translate", "--ignore-certificate-errors" ],
+   "chromeOptions": {
+      "args": [ "--start-maximized", "--activate-on-launch", "--homepage=about:blank", "--no-first-run", "--disable-hang-monitor", "--disable-popup-blocking", "--disable-prompt-on-repost", "--no-default-browser-check", "--disable-translate", "--ignore-certificate-errors" ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[1.058][INFO]:      Launching chrome: "C:\Users\tester\AppData\Local\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors --start-maximized --activate-on-launch --homepage=about:blank --no-first-run --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --no-default-browser-check --disable-translate --ignore-certificate-errors about:blank
+[2.198][INFO]:      Connected to Chrome successfully. Version: 26.0.1410.64
+[2.213][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467)
+[2.213][FINE]:      Command finished (/session/40415d22d41d3f501c744de0ba973467) with response {
+   "sessionId": "40415d22d41d3f501c744de0ba973467",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "26.0.1410.64",
+      "webStorageEnabled": true
+   }
+}
+
+[2.433][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467/window_handle)
+[2.433][FINER]:     Waiting for all views to stop loading...
+[2.434][FINER]:     Done waiting for all views to stop loading
+[2.434][FINER]:     Waiting for all views to stop loading...
+[2.434][FINER]:     Done waiting for all views to stop loading
+[2.434][FINE]:      Command finished (/session/40415d22d41d3f501c744de0ba973467/window_handle) with response {
+   "sessionId": "40415d22d41d3f501c744de0ba973467",
+   "status": 0,
+   "value": "f1-2"
+}
+
+[2.510][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467/window_handle)
+[2.510][FINER]:     Waiting for all views to stop loading...
+[2.511][FINER]:     Done waiting for all views to stop loading
+[2.511][FINER]:     Waiting for all views to stop loading...
+[2.511][FINER]:     Done waiting for all views to stop loading
+[2.511][FINE]:      Command finished (/session/40415d22d41d3f501c744de0ba973467/window_handle) with response {
+   "sessionId": "40415d22d41d3f501c744de0ba973467",
+   "status": 0,
+   "value": "f1-2"
+}
+
+[2.516][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467/timeouts/implicit_wait) with params {
+   "ms": 60000
+}
+
+[2.516][FINER]:     Waiting for all views to stop loading...
+[2.517][FINER]:     Done waiting for all views to stop loading
+[2.517][FINER]:     Waiting for all views to stop loading...
+[2.517][FINER]:     Done waiting for all views to stop loading
+[2.517][FINE]:      Command finished (/session/40415d22d41d3f501c744de0ba973467/timeouts/implicit_wait) with response {
+   "sessionId": "40415d22d41d3f501c744de0ba973467",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.524][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467/url) with params {
+   "url": "http://10.1.25.126:8080/secure/Dashboard.jspa"
+}
+
+[2.524][FINER]:     Waiting for all views to stop loading...
+[2.524][FINER]:     Done waiting for all views to stop loading
+[3.089][FINER]:     Waiting for all views to stop loading...
+[3.101][FINER]:     Done waiting for all views to stop loading
+[3.101][WARNING]:   AfterExecuteCommand failed: Chrome did not respond to 'WaitForAllTabsToStopLoading'. Elapsed time was 1 ms.
+[3.101][FINE]:      Command finished (/session/40415d22d41d3f501c744de0ba973467/url) with response {
+   "sessionId": "40415d22d41d3f501c744de0ba973467",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[3.114][FINE]:      Command received (/session/40415d22d41d3f501c744de0ba973467/frame) with params {
+   "id": "gadget-0"
+}
+
+[3.114][FINER]:     Waiting for all views to stop loading...

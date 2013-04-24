@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.006">
+  <properties />
+  
+  
+            <testcase name="testServer" time="0.000" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006" />
+                <testcase name="testServer" time="0.001" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006" />
+                <testcase name="testServer" time="0.005" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006" />
+      
+</testsuite>

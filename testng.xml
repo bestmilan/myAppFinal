@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Suite" parallel="methods" thread-count="2"> -->
+<suite name="Suite" parallel="false" >
+	<listeners>
+		<listener class-name="com.wonders.utils.TestngListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.testng.reporters.SuiteHTMLReporter" />
+	</listeners>
+	<test name="Test">
+		<parameter name="jiraVer" value="v5.0.7" />
+		<parameter name="adminUser" value="admin" />
+		<parameter name="adminPW" value="admin" />
+		<groups>
+			<run>
+				<!-- <include name="easy" /> <include name="normal" /> -->
+				<include name="search3" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.wonders.*" />
+		</packages>
+		<!-- <classes> <class name="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_005"> 
+			<methods> <include name="JIRA_ISSUE_005" /> </methods> </class> </classes> -->
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

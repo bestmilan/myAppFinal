@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+<table name="TEST1">
+    <column>blockType</column>
+    <column>block</column>
+    <column>status</column>
+    <column>reporter</column>
+    <column>days</column>
+    <row>
+      <value>Summary,Environment</value>
+      <value>Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31</value>
+      <value>In Progress</value>
+      <value>admin</value>
+      <value>15</value>
+    </row>
+    <row>
+      <value>Summary,Environment</value>
+      <value></value>
+      <value>In Progress,Open,Reopened,Resolved,Closed</value>
+      <value>user1</value>
+      <value>1</value>
+    </row>
+  </table>
+</dataset>

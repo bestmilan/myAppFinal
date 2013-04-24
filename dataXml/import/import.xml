@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+<table name="TEST1">
+    <column>ID</column>
+    <column>NAME</column>
+    <row>
+      <value>111</value>
+      <value>1f</value>
+    </row>
+  </table>
+  <table name="TEST2">
+    <column>ID</column>
+    <column>NAME</column>
+    <row>
+      <value>11</value>
+      <value>3伐</value>
+    </row>
+  </table>
+</dataset>

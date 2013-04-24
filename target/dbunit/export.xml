@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <table name="TEST2">
+    <column>ID</column>
+    <column>NAME</column>
+    <row>
+      <value>1</value>
+      <value>T2_1</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>T2_2</value>
+    </row>
+  </table>
+</dataset>

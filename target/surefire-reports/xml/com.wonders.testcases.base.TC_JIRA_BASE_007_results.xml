@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="2"
+           time="0.000">
+  <properties />
+            <testcase name="setup" time="0.000" classname="com.wonders.testcases.base.TC_JIRA_BASE_007">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
+Driver info: driver.version: GenericRemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.32.0', revision: '6c40c187d01409a5dc3b7f8251859150c8af0bcb', time: '2013-04-09 10:39:28'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_03'
+Driver info: driver.version: GenericRemoteWebDriver
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+  browser.webdriver.GenericRemoteWebDriver.get(GenericRemoteWebDriver.java:77)
+  browser.webdriver.GenericRemoteWebDriverFactory.getGenericRemoteWebDriver(GenericRemoteWebDriverFactory.java:81)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:17)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:23)
+  com.wonders.utils.BaseHome.Launch(BaseHome.java:26)
+  com.wonders.testcases.base.TC_JIRA_BASE_007.setup(TC_JIRA_BASE_007.java:18)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:768)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+  org.testng.TestNG.run(TestNG.java:1025)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+  org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+  org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: '2.32.0', revision: '6c40c187d01409a5dc3b7f8251859150c8af0bcb', time: '2013-04-09 10:39:28'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_03'
+Driver info: driver.version: GenericRemoteWebDriver
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:75)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+  browser.webdriver.GenericRemoteWebDriver.get(GenericRemoteWebDriver.java:77)
+  browser.webdriver.GenericRemoteWebDriverFactory.getGenericRemoteWebDriver(GenericRemoteWebDriverFactory.java:81)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:17)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:23)
+  com.wonders.utils.BaseHome.Launch(BaseHome.java:26)
+  com.wonders.testcases.base.TC_JIRA_BASE_007.setup(TC_JIRA_BASE_007.java:18)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:768)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+  org.testng.TestNG.run(TestNG.java:1025)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+  org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+  org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: java.net.SocketException: Connection reset
+  java.net.SocketInputStream.read(SocketInputStream.java:189)
+  java.net.SocketInputStream.read(SocketInputStream.java:121)
+  org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
+  org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
+  org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
+  org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
+  org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
+  org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
+  org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
+  org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
+  org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+  org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
+  org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
+  org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
+  org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
+  org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+  browser.webdriver.GenericRemoteWebDriver.get(GenericRemoteWebDriver.java:77)
+  browser.webdriver.GenericRemoteWebDriverFactory.getGenericRemoteWebDriver(GenericRemoteWebDriverFactory.java:81)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:17)
+  browser.common.GenericWebDriverFactory.getGenericWebDriver(GenericWebDriverFactory.java:23)
+  com.wonders.utils.BaseHome.Launch(BaseHome.java:26)
+  com.wonders.testcases.base.TC_JIRA_BASE_007.setup(TC_JIRA_BASE_007.java:18)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:768)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+  org.testng.TestNG.run(TestNG.java:1025)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+  org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+  org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="cleanup" time="0.0" classname="com.wonders.testcases.base.TC_JIRA_BASE_007">
+          <skipped />
+    </testcase>
+            <testcase name="JIRA_BASE_007" time="0.0" classname="com.wonders.testcases.base.TC_JIRA_BASE_007">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
