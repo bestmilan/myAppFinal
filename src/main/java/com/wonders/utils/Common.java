@@ -3,27 +3,29 @@ package com.wonders.utils;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.ss.usermodel.Cell;
 
+import browser.common.IGenericWebDriver;
+
 import com.wonders.configuration.Config;
 
-public class Common extends BaseHome {
+public class Common{
 
 	/* Other Methods */
-	public static void CloseWarningMessageWithAcception() {
+	public static void CloseWarningMessageWithAcception(IGenericWebDriver driver) {
 		driver.switchToAlertWindow().accept();
 	}
  
 	public static void CloseWarningMessageWithAcception(String sMessage,
-			boolean bIsEqual) {
+			boolean bIsEqual, IGenericWebDriver driver) {
 
 		if (bIsEqual) {
 			if (driver.switchToAlertWindow().getText().equals(sMessage)) {
-				CloseWarningMessageWithAcception();
+				CloseWarningMessageWithAcception(driver);
 			}
 		}
 
 		if (!bIsEqual) {
 			if (driver.switchToAlertWindow().getText().contains(sMessage)) {
-				CloseWarningMessageWithAcception();
+				CloseWarningMessageWithAcception(driver);
 			}
 		}
 

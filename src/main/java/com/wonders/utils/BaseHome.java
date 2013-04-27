@@ -7,9 +7,9 @@ import browser.common.IGenericWebDriver;
 public class BaseHome {
 
 	/* Get driver for Home Page */ 
-	public static IGenericWebDriver driver;
+	public IGenericWebDriver driver;
 
-	public static void Launch(String sBrowserType, String sURL) {
+	public void Launch(String sBrowserType, String sURL) {
 
 		if (sBrowserType.equals(BrowserType.FireFox.toString())) {
 			driver = GenericWebDriverFactory.getGenericWebDriver(sBrowserType,
@@ -29,22 +29,22 @@ public class BaseHome {
 	}
 
 	/* Quit Browser */
-	public static void Quit() {
+	public void Quit() {
 		driver.quit();
 	}
 
 	/* Close Browser */
-	public static void Close() {
+	public void Close() {
 		driver.close();
 	}
 	
 	/* wait for page complete */
-	public static void waitForComplete() {
+	public void waitForComplete() {
 		driver.waitForComplete();
 	}
 	
 	/* wait for complete */
-	public static void excuteJs(String script) {
+	public void excuteJs(String script) {
 		driver.executeScript(script); 
 	}
 }

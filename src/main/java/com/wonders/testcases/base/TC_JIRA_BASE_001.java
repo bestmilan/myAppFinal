@@ -7,23 +7,24 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.wonders.configuration.Config;
-import com.wonders.pagewrapper.base.LoginPage;
-import com.wonders.pagewrapper.base.MainPage;
 import com.wonders.service.base.LoginPageService;
 import com.wonders.service.base.MainPageService;
 import com.wonders.utils.Assertion;
 import com.wonders.utils.BaseHome;
 @Test(groups={"base", "easy", "test1"})
 public class TC_JIRA_BASE_001 {
+	private BaseHome home;
+	
 	@Parameters({"browser"})
 	@BeforeMethod(alwaysRun = true)
 	public void setup(@Optional("FireFox")String browser) {
-		BaseHome.Launch(browser, Config.getLaunchUrl());		
+		home = new BaseHome();
+		home.Launch(browser, Config.getLaunchUrl());		
 	}
 	
 	@AfterMethod()
 	public void cleanup() {
-		BaseHome.Quit();
+		home.Quit();
 	}
 	/**
 	 * TODO:	登录系统，校验jira版本
@@ -37,13 +38,14 @@ public class TC_JIRA_BASE_001 {
 	@Test(description = "登录系统，校验jira版本")
 	public void JIRA_BASE_001(String jiraVer, String adminUser, String adminPW){		
 		//login
-		LoginPageService.login(adminUser, adminPW);
-		LoginPage.driver.switchToWindow(MainPageService.assertMainPage());
+		LoginPageService loginService = new LoginPageService(home.driver);
+		loginService.login(adminUser, adminPW);
+		home.driver.switchToWindow(MainPageService.assertMainPage());
 		//check jira version
 		String ver = MainPage.spnVersion().getText();
 		Assertion.AssertEquals(ver.substring(1, ver.indexOf("#")), jiraVer);		
 		//log out
 		MainPageService.logout();
-		BaseHome.driver.switchToDefaultWindow();
+		home.driver.switchToDefaultWindow();
 	}
 }

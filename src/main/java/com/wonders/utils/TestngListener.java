@@ -7,7 +7,9 @@ public class TestngListener extends TestListenerAdapter {
 	@Override
 	public void onTestFailure(ITestResult tr) {
 		System.out.println("onTestFailure");
-		ScreenShot.genScreenShot(BaseHome.driver);
+		// call the superclass
+		super.onTestFailure(tr);
+		WebDriver driver =  WebDriverManager.getDriverInstance();
 	} 
 
 	@Override

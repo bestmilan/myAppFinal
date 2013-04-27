@@ -4,7 +4,7 @@ import org.testng.Assert;
 
 import testngext.Logger;
 
-public class Assertion extends BaseHome {
+public class Assertion{
 	public static void AssertEquals(String sActual, String sExpected) {
 		Assert.assertEquals(sActual, sExpected);
 		Logger.logToConsole("Asserting Passed --- Actual Value: {" + sActual
@@ -57,7 +57,6 @@ public class Assertion extends BaseHome {
 		} catch (AssertionError e) {
 			Logger.logToConsole("Vertify Failed --- Actual Value: {"
 					+ sActual + "}; " + "Expected Value: {" + sExpected + "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	} 
 
@@ -71,7 +70,6 @@ public class Assertion extends BaseHome {
 		} catch (AssertionError e) {
 			Logger.logToConsole("Vertify Failed --- Actual Value: {"
 					+ iAcutal + "}; " + "Expected Value: {" + iExpected + "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	}
 
@@ -85,7 +83,6 @@ public class Assertion extends BaseHome {
 		} catch (AssertionError e) {
 			Logger.logToConsole("Vertify Failed --- Actual Value: {"
 					+ bCondition + "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	}
 
@@ -99,7 +96,6 @@ public class Assertion extends BaseHome {
 		} catch (AssertionError e) {
 			Logger.logToConsole("Vertify Failed --- Actual Value: {"
 					+ bCondition + "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	}
 
@@ -119,7 +115,6 @@ public class Assertion extends BaseHome {
 			Logger.logToConsole(purpose
 					+ ": Vertify Failed --- Actual Value: {" + sActual
 					+ "}; " + "Expected Value: {" + sExpected + "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	}
 
@@ -135,7 +130,6 @@ public class Assertion extends BaseHome {
 			Logger.logToConsole(purpose
 					+ ": Vertify Failed --- Actual Value: {" + bCondition
 					+ "}");
-			ScreenShot.genScreenShot(driver);
 		}
 	}
 }

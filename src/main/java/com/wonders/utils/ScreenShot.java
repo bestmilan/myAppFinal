@@ -5,11 +5,9 @@ import java.io.IOException;
 
 import com.wonders.configuration.Config;
 
-import browser.common.IGenericWebDriver;
-
-public class ScreenShot {
+public class ScreenShot{
 	
-	public static void genScreenShot(IGenericWebDriver driver){
+	public void genScreenShot(){
 		try {
 			driver.takeScreenShotToFile(new File(genScreenFullPath("screenshot")));
 		} catch (IOException e) {
