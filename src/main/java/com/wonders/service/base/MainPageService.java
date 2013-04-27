@@ -1,58 +1,69 @@
 package com.wonders.service.base;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import utils.Alter;
 import browser.common.Find;
 import browser.common.FindBy;
+import browser.common.IGenericWebDriver;
 
 import com.wonders.configuration.Config;
 import com.wonders.pagewrapper.base.MainPage;
-import com.wonders.utils.BaseHome;
 
 public class MainPageService {
+	private IGenericWebDriver driver;
+	@Autowired
+	private MainPage mainPage;
+	public MainPageService(IGenericWebDriver _driver){
+		driver = _driver;
+		mainPage = new MainPage(_driver);
+	}
 	// log out
-	public static void logout() {
-		BaseHome.waitForComplete();
-		MainPage.btnLogOutArrow().click();
-		MainPage.btnLogOut().click();
+	public void logout() {
+		driver.waitForComplete();
+		mainPage.btnLogOutArrow().click();
+		mainPage.btnLogOut().click();
 	}
 
-	public static void showCreateIssuePage() {
-		MainPage.divCreateItem().click();
-		BaseHome.waitForComplete();
+	public void showCreateIssuePage() {
+		mainPage.divCreateItem().click();
+		driver.waitForComplete();
 	}
 
-	public static String getIssueCreatedKey() {
-		return MainPage.lnkIssueCreatedKey().getText();
+	public String getIssueCreatedKey() {
+		return mainPage.lnkIssueCreatedKey().getText();
 	}
 
-	public static boolean checkIssueCreate(String issueSummary) {
+	public boolean checkIssueCreate(String issueSummary) {
 		return getIssueCreatedKey().indexOf(issueSummary) != -1;
 	}
 
-	public static void quickSearch(String issueSummary) {
-		MainPage.txtQuickSearchInput().typeText(issueSummary);
-		BaseHome.excuteJs("document.getElementById('quicksearch').submit();");
+	public void quickSearch(String issueSummary) {
+		mainPage.txtQuickSearchInput().typeText(issueSummary);
+		driver.executeScript("document.getElementById('quicksearch').submit();");
 		closeWin();
 	}
 
-	public static void closeWin() {
-		Alter alterWindow = new Alter(BaseHome.driver,
-				Config.getDefaultWaitedTime());
+	public void closeWin() {
+		Alter alterWindow = new Alter(driver, Config.getDefaultWaitedTime());
 		alterWindow.WaitAlterWindowPresent();
 		alterWindow.CloseAlterWindowWithAcception();
 	}
 
-	public static FindBy assertMainPage() {
+	public FindBy assertMainPage() {
 		return Find.byID("gadget-10000-title");
 	}
 
 	//
-	public static void gotoIssueSearch() {
-		MainPage.lnkIssueSearch().click();
+	public void gotoIssueSearch() {
+		mainPage.lnkIssueSearch().click();
 	}
 
-	public static String getUserErrorMessage() {
-		return MainPage.divUserError().getText();
+	public String getUserErrorMessage() {
+		return mainPage.divUserError().getText();
 	}
 	
+	public String getVersion() {
+		return mainPage.spnVersion().getText();
+	}
 }

@@ -1,15 +1,15 @@
-package com.wonders.utils;
+package com.wonders.core;
 
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import browser.common.IGenericWebDriver;
+
 public class TestngListener extends TestListenerAdapter {
 	@Override
 	public void onTestFailure(ITestResult tr) {
-		System.out.println("onTestFailure");
-		// call the superclass
-		super.onTestFailure(tr);
-		WebDriver driver =  WebDriverManager.getDriverInstance();
+		IGenericWebDriver driver = GenericWebDriverManager.getDriverInstance();
+		ScreenShot.genScreenShot(driver, tr.getTestClass().getName());
 	} 
 
 	@Override

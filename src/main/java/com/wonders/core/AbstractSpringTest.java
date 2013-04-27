@@ -1,4 +1,4 @@
-package com.wonders.utils;
+package com.wonders.core;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;

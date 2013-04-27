@@ -3,7 +3,7 @@ package com.wonders.testcases.base;
 import org.testng.annotations.BeforeSuite;
 
 import com.wonders.configuration.Config;
-import com.wonders.utils.ScreenShot;
+import com.wonders.core.ScreenShot;
 
 public class PRE_ACTION {
 	@BeforeSuite(alwaysRun = true)

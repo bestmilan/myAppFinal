@@ -1,4 +1,6 @@
-package com.wonders.utils;
+package com.wonders.core;
+
+import com.wonders.utils.Common;
 
 import browser.common.BrowserType;
 import browser.common.GenericWebDriverFactory;
@@ -14,18 +16,14 @@ public class BaseHome {
 		if (sBrowserType.equals(BrowserType.FireFox.toString())) {
 			driver = GenericWebDriverFactory.getGenericWebDriver(sBrowserType,
 					sURL, Common.getFireFoxDriver());
-		}
-
-		if (sBrowserType.equals(BrowserType.InternetExplorer.toString())) {
+		}else if (sBrowserType.equals(BrowserType.InternetExplorer.toString())) {
 			driver = GenericWebDriverFactory.getGenericWebDriver(sBrowserType,
 					sURL, Common.getIEDriver());
-		}
-
-		if (sBrowserType.equals(BrowserType.Chrome.toString())) {
-			
+		}else if (sBrowserType.equals(BrowserType.Chrome.toString())) {			
 			driver = GenericWebDriverFactory.getGenericWebDriver(sBrowserType,
 					sURL, Common.getChromeDriver());
 		}
+		GenericWebDriverManager.startDriver(driver);
 	}
 
 	/* Quit Browser */
@@ -38,13 +36,4 @@ public class BaseHome {
 		driver.close();
 	}
 	
-	/* wait for page complete */
-	public void waitForComplete() {
-		driver.waitForComplete();
-	}
-	
-	/* wait for complete */
-	public void excuteJs(String script) {
-		driver.executeScript(script); 
-	}
 }

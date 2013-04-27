@@ -1,4 +1,4 @@
-package com.wonders.utils;
+package com.wonders.core;
 
 import org.testng.Assert;
 
@@ -9,7 +9,6 @@ public class Assertion{
 		Assert.assertEquals(sActual, sExpected);
 		Logger.logToConsole("Asserting Passed --- Actual Value: {" + sActual
 				+ "}; " + "Expected Value: {" + sExpected + "}");
-		//ScreenShot.genScreenShot(driver);
 	}
 
 	public static void AssertEquals(int iAcutal, int iExpected) {

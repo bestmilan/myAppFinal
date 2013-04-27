@@ -2,50 +2,53 @@ package com.wonders.pagewrapper.base;
 
 import java.util.Calendar;
 
-import com.wonders.utils.BaseHome;
+import browser.common.Find;
+import browser.common.IGenericWebDiv;
+import browser.common.IGenericWebDriver;
 
-import browser.common.*;
-
-public class DatePicker extends BaseHome {
-
+public class DatePicker{
+	private IGenericWebDriver driver;
+	public DatePicker(IGenericWebDriver _driver){
+		driver = _driver;
+	}
 	/* Elements Definitions */
-	public static IGenericWebDiv lnkPreviousYear()
+	public IGenericWebDiv lnkPreviousYear()
 	{
 		return driver.findDiv(Find.byText("«"));
 	}
 	
-	public static IGenericWebDiv lnkPreviousMonth()
+	public IGenericWebDiv lnkPreviousMonth()
 	{
 		return driver.findDiv(Find.byText("‹"));
 	}
 	
-	public static IGenericWebDiv lnkNextYear()
+	public IGenericWebDiv lnkNextYear()
 	{
 		return driver.findDiv(Find.byText("»"));
 	}
 	
-	public static IGenericWebDiv lnkNextMonth()
+	public IGenericWebDiv lnkNextMonth()
 	{
 		return driver.findDiv(Find.byText("›"));
 	}
 	
-	public static void SetDateOfToday() {		
+	public void SetDateOfToday() {		
 		driver.switchToFrame(1).findButton(Find.byID("dpTodayInput")).click();
 		driver.switchToCurrentWindowDefault();
 	}
 	
-	public static void ClearDate() {
+	public void ClearDate() {
 		driver.switchToFrame(1).findButton(Find.byID("dpClearInput")).click();
 		driver.switchToCurrentWindowDefault();
 	}
 	
-	public static void AcceptDate() {
+	public void AcceptDate() {
 		driver.switchToFrame(1).findButton(Find.byID("dpOkInput")).click();
 		driver.switchToCurrentWindowDefault();
 	}
 	
 	/* DatePicker Methods */
-	public static void SetDate(String sDate) {
+	public void SetDate(String sDate) {
 		Calendar _calendar = Calendar.getInstance();
 		
 		int iCurrentYear = _calendar.get(Calendar.YEAR); 
