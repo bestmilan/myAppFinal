@@ -1,0 +1,44 @@
+package $package;
+import com.wonders.configuration.Config;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import com.wonders.core.BaseHome;
+import com.wonders.service.base.LoginPageService;
+import $servicePackage;
+
+@Test(groups={""})
+public class $caseClass {
+	private BaseHome home;
+	private LoginPageService loginPageService;
+	private $serviceClass $serviceClassVar;
+	
+	@Parameters({"browser"})
+	@BeforeMethod(alwaysRun = true)
+	public void setup(@Optional("Chrome")String browser) {
+		home = new BaseHome();
+		home.Launch(browser, Config.getLaunchUrl());	
+		loginPageService = new LoginPageService(home.driver);
+		$serviceClassVar = new $serviceClass(home.driver);
+	}
+	
+	@AfterMethod()
+	public void cleanup() {
+		home.Quit();
+	}
+	/**
+	 * TODO:	
+	 * @author:	bluce
+	 * @serialData:	$date
+	 * @point:	
+	 * @memo:	
+	 */
+	@Test(description = "")
+	public void $caseMethod(){		
+		//login
+		loginPageService.login();
+
+	}
+}

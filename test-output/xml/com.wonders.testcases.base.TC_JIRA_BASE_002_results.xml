@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.164">
+  <properties />
+  
+  
+            <testcase name="JIRA_BASE_002" time="2.164" classname="com.wonders.testcases.base.TC_JIRA_BASE_002" />
+      
+</testsuite>

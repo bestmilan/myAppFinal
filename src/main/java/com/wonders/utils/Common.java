@@ -7,7 +7,7 @@ import browser.common.IGenericWebDriver;
 
 import com.wonders.configuration.Config;
 
-public class Common{
+public class Common{ 
 
 	/* Other Methods */
 	public static void CloseWarningMessageWithAcception(IGenericWebDriver driver) {

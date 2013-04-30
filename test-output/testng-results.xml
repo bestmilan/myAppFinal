@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31541" started-at="2013-04-27T13:56:09Z" finished-at="2013-04-27T13:56:41Z">
+  <suite name="Default suite" duration-ms="43239" started-at="2013-04-30T12:29:26Z" finished-at="2013-04-30T12:30:09Z">
     <groups>
-      <group name="easy">
-        <method signature="TC_JIRA_BASE_001.JIRA_BASE_001(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="JIRA_BASE_001" class="com.wonders.testcases.base.TC_JIRA_BASE_001"/>
-      </group> <!-- easy -->
+      <group name="normal">
+        <method signature="TC_JIRA_BASE_003.JIRA_BASE_003()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="JIRA_BASE_003" class="com.wonders.testcases.base.TC_JIRA_BASE_003"/>
+      </group> <!-- normal -->
       <group name="base">
-        <method signature="TC_JIRA_BASE_001.JIRA_BASE_001(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="JIRA_BASE_001" class="com.wonders.testcases.base.TC_JIRA_BASE_001"/>
+        <method signature="TC_JIRA_BASE_003.JIRA_BASE_003()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="JIRA_BASE_003" class="com.wonders.testcases.base.TC_JIRA_BASE_003"/>
       </group> <!-- base -->
-      <group name="checkVer">
-        <method signature="TC_JIRA_BASE_001.JIRA_BASE_001(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="JIRA_BASE_001" class="com.wonders.testcases.base.TC_JIRA_BASE_001"/>
-      </group> <!-- checkVer -->
+      <group name="test3">
+        <method signature="TC_JIRA_BASE_003.JIRA_BASE_003()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="JIRA_BASE_003" class="com.wonders.testcases.base.TC_JIRA_BASE_003"/>
+      </group> <!-- test3 -->
     </groups>
-    <test name="Test" duration-ms="31541" started-at="2013-04-27T13:56:09Z" finished-at="2013-04-27T13:56:41Z">
-      <class name="com.wonders.testcases.base.TC_JIRA_BASE_001">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="setup" is-config="true" duration-ms="21617" started-at="2013-04-27T21:56:09Z" finished-at="2013-04-27T21:56:31Z">
+    <test name="Default test" duration-ms="43239" started-at="2013-04-30T12:29:26Z" finished-at="2013-04-30T12:30:09Z">
+      <class name="com.wonders.testcases.base.TC_JIRA_BASE_003">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="setup" is-config="true" duration-ms="21844" started-at="2013-04-30T20:29:26Z" finished-at="2013-04-30T20:29:48Z">
           <params>
             <param index="0">
               <value>
@@ -27,38 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="JIRA_BASE_001(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="JIRA_BASE_001" duration-ms="7317" started-at="2013-04-27T21:56:31Z" description="登录系统，校验jira版本" finished-at="2013-04-27T21:56:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[v5.0.7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="JIRA_BASE_003()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="JIRA_BASE_003" duration-ms="9801" started-at="2013-04-30T20:29:48Z" finished-at="2013-04-30T20:29:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JIRA_BASE_001 -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_001@169040c]" name="cleanup" is-config="true" duration-ms="2594" started-at="2013-04-27T21:56:38Z" finished-at="2013-04-27T21:56:41Z">
+        </test-method> <!-- JIRA_BASE_003 -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.wonders.testcases.base.TC_JIRA_BASE_003@7d30b3]" name="cleanup" is-config="true" duration-ms="11577" started-at="2013-04-30T20:29:57Z" finished-at="2013-04-30T20:30:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_001 -->
-      <class name="com.wonders.testcases.base.PRE_ACTION">
-        <test-method status="PASS" signature="delOldFileData()[pri:0, instance:com.wonders.testcases.base.PRE_ACTION@171cdc]" name="delOldFileData" is-config="true" duration-ms="9" started-at="2013-04-27T21:56:09Z" finished-at="2013-04-27T21:56:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delOldFileData -->
-      </class> <!-- com.wonders.testcases.base.PRE_ACTION -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_003 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,10 @@
+package $package;
+import browser.common.IGenericWebDriver;
+@SuppressWarnings("unused")
+public class $pageClass{
+	private IGenericWebDriver driver;
+	public $pageClass(IGenericWebDriver _driver) {
+		driver = _driver;
+	}
+	
+}

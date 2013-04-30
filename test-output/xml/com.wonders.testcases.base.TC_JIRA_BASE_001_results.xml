@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.317">
+           time="13.038">
   <properties />
   
   
-            <testcase name="JIRA_BASE_001" time="7.317" classname="com.wonders.testcases.base.TC_JIRA_BASE_001" />
+            <testcase name="JIRA_BASE_001" time="13.038" classname="com.wonders.testcases.base.TC_JIRA_BASE_001" />
       
 </testsuite>

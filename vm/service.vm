@@ -1,0 +1,15 @@
+package $package;
+import org.springframework.beans.factory.annotation.Autowired;
+import browser.common.IGenericWebDriver;
+import $pageClassPackage;
+
+public class $serviceClass {
+	private IGenericWebDriver driver;
+	@Autowired
+	private $pageClass $pageClassVar;
+	public $serviceClass(IGenericWebDriver _driver){
+		driver = _driver;
+		$pageClassVar = new $pageClass(_driver);
+	}
+	
+}

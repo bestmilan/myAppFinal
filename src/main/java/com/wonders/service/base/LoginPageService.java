@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import browser.common.IGenericWebDriver;
 
+import com.wonders.configuration.Config;
 import com.wonders.pagewrapper.base.LoginPage;
 
 public class LoginPageService {
@@ -15,10 +16,17 @@ public class LoginPageService {
 		loginPage = new LoginPage(_driver);
 	}
 	
-	public void login(String adminUser, String adminPW) {
+	public void login(String userName, String passWord) {
 		loginPage.swtichToFrame();
-		loginPage.txtLoginUserName().typeText(adminUser);
-		loginPage.txtLoginPassWord().typeText(adminPW);
+		loginPage.txtLoginUserName().typeText(userName);
+		loginPage.txtLoginPassWord().typeText(passWord);
+		loginPage.btnLogin().click();
+	}
+	
+	public void login() {
+		loginPage.swtichToFrame();
+		loginPage.txtLoginUserName().typeText(Config.getUser());
+		loginPage.txtLoginPassWord().typeText(Config.getPassword());
 		loginPage.btnLogin().click();
 	}
 	

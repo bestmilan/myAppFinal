@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<!-- <suite name="Suite" parallel="methods" thread-count="2"> -->
-<suite name="Suite" parallel="false" >
+ <suite name="Suite" parallel="methods" thread-count="2"> 
+<!--<suite name="Suite" parallel="false" >-->
 	<listeners>
 		<listener class-name="com.wonders.core.TestngListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -11,11 +11,9 @@
 	</listeners>
 	<test name="Test">
 		<parameter name="jiraVer" value="v5.0.7" />
-		<parameter name="adminUser" value="admin" />
-		<parameter name="adminPW" value="admin" />
 		<groups>
 			<run>
-				<include name="checkVer" />
+				<include name="base" />
 			</run>
 		</groups>
 		<packages>

@@ -48,12 +48,12 @@ public class Config {
 	
 	/* Get User */
 	public static String getUser() {
-		return config.getProperty("User");
+		return config.getProperty("DefaultUser");
 	}
 	
 	/* Get Password */
 	public static String getPassword() {
-		return config.getProperty("Password");
+		return config.getProperty("DefaultPassword");
 	}
 	
 	/* Get FIREFOX_PATH */

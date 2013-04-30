@@ -38,11 +38,11 @@ public class TC_JIRA_BASE_001 {
 	 * @point:	@Parameters
 	 * @memo:	
 	 */
-	@Parameters({"jiraVer", "adminUser", "adminPW"})
+	@Parameters({"jiraVer"})
 	@Test(description = "登录系统，校验jira版本")
-	public void JIRA_BASE_001(String jiraVer, String adminUser, String adminPW){		
+	public void JIRA_BASE_001(String jiraVer){		
 		//login
-		loginPageService.login(adminUser, adminPW);
+		loginPageService.login();
 		home.driver.switchToWindow(mainPageService.assertMainPage());
 		//check jira version
 		String ver = mainPageService.getVersion();
