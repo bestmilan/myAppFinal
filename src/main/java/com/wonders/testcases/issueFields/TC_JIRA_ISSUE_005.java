@@ -9,19 +9,22 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.wonders.configuration.Config;
+import com.wonders.core.AbstractSpringTest;
 import com.wonders.core.Assertion;
 import com.wonders.core.BaseHome;
 import com.wonders.service.base.LoginPageService;
 import com.wonders.service.base.MainPageService;
 import com.wonders.service.issue.SearchIssueResultService;
+import com.wonders.service.issue.SearchIssueService;
 import com.wonders.testData.ReadTestData;
 
 @Test(groups = {"project", "hard", "search" })
-public class TC_JIRA_ISSUE_005 {
+public class TC_JIRA_ISSUE_005 extends AbstractSpringTest {
 	private BaseHome home;
 	private LoginPageService loginPageService;
 	private MainPageService mainPageService;
 	private SearchIssueResultService searchIssueResultService;
+	private SearchIssueService searchIssueService;
 	@Parameters({"browser"})
 	@BeforeMethod(alwaysRun = true)
 	public void setup(@Optional("Chrome")String browser) {
@@ -29,7 +32,8 @@ public class TC_JIRA_ISSUE_005 {
 		home.Launch(browser, Config.getLaunchUrl());	
 		loginPageService = new LoginPageService(home.driver);
 		mainPageService = new MainPageService(home.driver);
-		searchIssueResultService = new SearchIssueResultService(home.driver); 
+		searchIssueResultService = new SearchIssueResultService(home.driver);
+		searchIssueService = new SearchIssueService(home.driver); 
 	}
 	
 	@AfterMethod()
@@ -57,10 +61,10 @@ public class TC_JIRA_ISSUE_005 {
 		mainPageService.gotoIssueSearch();
 		home.driver.switchToWindow("Issue Navigator - Your Company JIRA");
 		// search issue
-		/*searchIssueResultService.setSearchFields(blockType, block, status, reporter, days);
+		searchIssueService.setSearchFields(blockType, block, status, reporter, days);
 		home.driver.waitForComplete();
 		Assertion.AssertTrue(searchIssueResultService.checkSearchResultCount(
-				blockType, block, status, reporter, days));*/
+				blockType, block, status, reporter, days));
 		// log out
 		mainPageService.logout();
 		home.driver.switchToDefaultWindow();
