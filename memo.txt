@@ -39,4 +39,8 @@ A8:
 	run->maven build->dbunit:export	-Ddest=dataXml/export/export.xml
 	dbunit:operation
 	dbunit:compare
+Q9:
+	java.lang.NoClassDefFoundError: org/apache/tools/ant/Task
+A9:
+	重新生成testng.xml
 	

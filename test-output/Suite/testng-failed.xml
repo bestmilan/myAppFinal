@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="methods">
   <parameter name="jiraVer" value="v5.0.7"/>
   <listeners>
     <listener class-name="com.wonders.core.TestngListener"/>
@@ -8,14 +8,28 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="org.testng.reporters.SuiteHTMLReporter"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test(failed)" parallel="methods">
     <parameter name="jiraVer" value="v5.0.7"/>
     <groups>
       <run>
+        <include name="checkVer"/>
         <include name="test2"/>
+        <include name="test3"/>
       </run>
     </groups>
     <classes>
+      <class name="com.wonders.testcases.base.PRE_ACTION">
+        <methods>
+          <include name="delOldFileData"/>
+        </methods>
+      </class> <!-- com.wonders.testcases.base.PRE_ACTION -->
+      <class name="com.wonders.testcases.base.TC_JIRA_BASE_001">
+        <methods>
+          <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="JIRA_BASE_001" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_001 -->
       <class name="com.wonders.testcases.base.TC_JIRA_BASE_002">
         <methods>
           <include name="JIRA_BASE_002"/>
@@ -23,11 +37,13 @@
           <include name="cleanup"/>
         </methods>
       </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_002 -->
-      <class name="com.wonders.testcases.base.PRE_ACTION">
+      <class name="com.wonders.testcases.base.TC_JIRA_BASE_003">
         <methods>
-          <include name="delOldFileData"/>
+          <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="JIRA_BASE_003"/>
         </methods>
-      </class> <!-- com.wonders.testcases.base.PRE_ACTION -->
+      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_003 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

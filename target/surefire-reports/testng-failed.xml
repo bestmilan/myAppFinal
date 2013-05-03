@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]">
+<suite thread-count="1" verbose="0" name="Failed suite [Suite]" parallel="methods">
   <parameter name="jiraVer" value="v5.0.7"/>
-  <parameter name="adminUser" value="admin"/>
-  <parameter name="adminPW" value="admin"/>
   <listeners>
-    <listener class-name="com.wonders.utils.TestngListener"/>
+    <listener class-name="com.wonders.core.TestngListener"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="org.testng.reporters.SuiteHTMLReporter"/>
   </listeners>
-  <test name="Test(failed)" preserve-order="true">
+  <test name="Test(failed)" parallel="methods" preserve-order="true">
     <parameter name="jiraVer" value="v5.0.7"/>
-    <parameter name="adminUser" value="admin"/>
-    <parameter name="adminPW" value="admin"/>
     <groups>
       <run>
-        <include name="search3"/>
+        <include name="checkVer"/>
+        <include name="test2"/>
       </run>
     </groups>
     <classes>
+      <class name="com.wonders.testcases.base.TC_JIRA_BASE_002">
+        <methods>
+          <include name="JIRA_BASE_002"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_002 -->
       <class name="com.wonders.testcases.base.PRE_ACTION">
         <methods>
           <include name="delOldFileData"/>
         </methods>
       </class> <!-- com.wonders.testcases.base.PRE_ACTION -->
-      <class name="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007">
+      <class name="com.wonders.testcases.base.TC_JIRA_BASE_001">
         <methods>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="JIRA_ISSUE_007" invocation-numbers="0"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="cleanup"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007 -->
+      </class> <!-- com.wonders.testcases.base.TC_JIRA_BASE_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

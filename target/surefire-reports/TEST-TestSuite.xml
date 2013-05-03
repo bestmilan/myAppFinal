@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="2" time="35.844" errors="0" skipped="3" tests="5" name="TestSuite">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="7.22" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin"/>
@@ -7,6 +7,7 @@
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
@@ -14,22 +15,19 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\workspace_self\my-app"/>
+    <property name="user.dir" value="D:\workspace_self\my-appThread"/>
     <property name="java.runtime.version" value="1.7.0_03-b05"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="basedir" value="D:\workspace_self\my-app"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\tester\AppData\Local\Temp\surefirebooter1617140440780165402.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\tester\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\workspace_self\.metadata\.plugins\org.maven.ide.eclipse\launches\m2conf6688997901649255874.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;D:\oracle\product\10.2.0\client_2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\TortoiseSVN\bin;D:\maven3\apache-maven-3.0.4\bin;C:\Program Files\Java\jdk1.7.0_03\bin;;D:\eclipse4.2;;."/>
-    <property name="surefire.test.class.path" value="D:\workspace_self\my-app\target\test-classes;D:\workspace_self\my-app\target\classes;D:\My Documents\.m2\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar;D:\My Documents\.m2\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\My Documents\.m2\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\My Documents\.m2\org\apache\poi\poi-ooxml\3.8\poi-ooxml-3.8.jar;D:\My Documents\.m2\org\apache\poi\poi\3.8\poi-3.8.jar;D:\My Documents\.m2\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;D:\My Documents\.m2\org\apache\poi\poi-ooxml-schemas\3.8\poi-ooxml-schemas-3.8.jar;D:\My Documents\.m2\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;D:\My Documents\.m2\stax\stax-api\1.0.1\stax-api-1.0.1.jar;D:\My Documents\.m2\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\My Documents\.m2\xerces\xercesImpl\2.10.0\xercesImpl-2.10.0.jar;D:\My Documents\.m2\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;D:\My Documents\.m2\org\springframework\spring-jdbc\3.1.0.RELEASE\spring-jdbc-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-tx\3.1.0.RELEASE\spring-tx-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-orm\3.1.0.RELEASE\spring-orm-3.1.0.RELEASE.jar;D:\My Documents\.m2\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\My Documents\.m2\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;D:\My Documents\.m2\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;D:\My Documents\.m2\cglib\cglib\2.2.2\cglib-2.2.2.jar;D:\My Documents\.m2\asm\asm\3.3.1\asm-3.3.1.jar;D:\My Documents\.m2\mysql\mysql-connector-java\5.0.2\mysql-connector-java-5.0.2.jar;D:\My Documents\.m2\junit\junit\4.10\junit-4.10.jar;D:\My Documents\.m2\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;D:\My Documents\.m2\org\springframework\spring-test\3.1.0.RELEASE\spring-test-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\testng\testng\6.5.2\testng-6.5.2.jar;D:\My Documents\.m2\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;D:\My Documents\.m2\com\beust\jcommander\1.12\jcommander-1.12.jar;D:\My Documents\.m2\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;D:\My Documents\.m2\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar;D:\My Documents\.m2\velocity\velocity\1.4\velocity-1.4.jar;D:\My Documents\.m2\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;D:\My Documents\.m2\com\google\inject\guice\3.0\guice-3.0.jar;D:\My Documents\.m2\javax\inject\javax.inject\1\javax.inject-1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-api\2.32.0\selenium-api-2.32.0.jar;D:\My Documents\.m2\com\google\guava\guava\14.0\guava-14.0.jar;D:\My Documents\.m2\org\json\json\20080701\json-20080701.jar;D:\My Documents\.m2\com\auto\sAutomationCore\1.3\sAutomationCore-1.3.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-java\2.32.0\selenium-java-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-android-driver\2.32.0\selenium-android-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-remote-driver\2.32.0\selenium-remote-driver-2.32.0.jar;D:\My Documents\.m2\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-chrome-driver\2.32.0\selenium-chrome-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-htmlunit-driver\2.32.0\selenium-htmlunit-driver-2.32.0.jar;D:\My Documents\.m2\net\sourceforge\htmlunit\htmlunit\2.12\htmlunit-2.12.jar;D:\My Documents\.m2\xalan\xalan\2.7.1\xalan-2.7.1.jar;D:\My Documents\.m2\xalan\serializer\2.7.1\serializer-2.7.1.jar;D:\My Documents\.m2\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpmime\4.2.3\httpmime-4.2.3.jar;D:\My Documents\.m2\net\sourceforge\htmlunit\htmlunit-core-js\2.12\htmlunit-core-js-2.12.jar;D:\My Documents\.m2\net\sourceforge\nekohtml\nekohtml\1.9.18\nekohtml-1.9.18.jar;D:\My Documents\.m2\net\sourceforge\cssparser\cssparser\0.9.9\cssparser-0.9.9.jar;D:\My Documents\.m2\org\w3c\css\sac\1.3\sac-1.3.jar;D:\My Documents\.m2\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-websocket\8.1.9.v20130131\jetty-websocket-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-util\8.1.9.v20130131\jetty-util-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-io\8.1.9.v20130131\jetty-io-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-http\8.1.9.v20130131\jetty-http-8.1.9.v20130131.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpclient\4.2.1\httpclient-4.2.1.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpcore\4.2.1\httpcore-4.2.1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-firefox-driver\2.32.0\selenium-firefox-driver-2.32.0.jar;D:\My Documents\.m2\commons-io\commons-io\2.2\commons-io-2.2.jar;D:\My Documents\.m2\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-ie-driver\2.32.0\selenium-ie-driver-2.32.0.jar;D:\My Documents\.m2\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;D:\My Documents\.m2\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-iphone-driver\2.32.0\selenium-iphone-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-safari-driver\2.32.0\selenium-safari-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-support\2.32.0\selenium-support-2.32.0.jar;D:\My Documents\.m2\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;D:\My Documents\.m2\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-server\2.32.0\selenium-server-2.32.0.jar;D:\My Documents\.m2\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;D:\My Documents\.m2\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;D:\My Documents\.m2\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;D:\My Documents\.m2\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;D:\My Documents\.m2\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;D:\My Documents\.m2\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;D:\My Documents\.m2\org\jdom\jdom\2.0.2\jdom-2.0.2.jar;"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;D:\oracle\product\10.2.0\client_2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\TortoiseSVN\bin;D:\maven3\apache-maven-3.0.4\bin;C:\Program Files\Java\jdk1.7.0_03\bin;C:\Program Files\Git\cmd;D:\eclipse4.2;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -40,11 +38,11 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="GBK"/>
     <property name="user.name" value="tester"/>
-    <property name="java.class.path" value="D:\workspace_self\my-app\target\test-classes;D:\workspace_self\my-app\target\classes;D:\My Documents\.m2\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar;D:\My Documents\.m2\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\My Documents\.m2\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\My Documents\.m2\org\apache\poi\poi-ooxml\3.8\poi-ooxml-3.8.jar;D:\My Documents\.m2\org\apache\poi\poi\3.8\poi-3.8.jar;D:\My Documents\.m2\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;D:\My Documents\.m2\org\apache\poi\poi-ooxml-schemas\3.8\poi-ooxml-schemas-3.8.jar;D:\My Documents\.m2\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;D:\My Documents\.m2\stax\stax-api\1.0.1\stax-api-1.0.1.jar;D:\My Documents\.m2\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\My Documents\.m2\xerces\xercesImpl\2.10.0\xercesImpl-2.10.0.jar;D:\My Documents\.m2\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;D:\My Documents\.m2\org\springframework\spring-jdbc\3.1.0.RELEASE\spring-jdbc-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-tx\3.1.0.RELEASE\spring-tx-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\springframework\spring-orm\3.1.0.RELEASE\spring-orm-3.1.0.RELEASE.jar;D:\My Documents\.m2\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\My Documents\.m2\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar;D:\My Documents\.m2\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;D:\My Documents\.m2\cglib\cglib\2.2.2\cglib-2.2.2.jar;D:\My Documents\.m2\asm\asm\3.3.1\asm-3.3.1.jar;D:\My Documents\.m2\mysql\mysql-connector-java\5.0.2\mysql-connector-java-5.0.2.jar;D:\My Documents\.m2\junit\junit\4.10\junit-4.10.jar;D:\My Documents\.m2\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;D:\My Documents\.m2\org\springframework\spring-test\3.1.0.RELEASE\spring-test-3.1.0.RELEASE.jar;D:\My Documents\.m2\org\testng\testng\6.5.2\testng-6.5.2.jar;D:\My Documents\.m2\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;D:\My Documents\.m2\com\beust\jcommander\1.12\jcommander-1.12.jar;D:\My Documents\.m2\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;D:\My Documents\.m2\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar;D:\My Documents\.m2\velocity\velocity\1.4\velocity-1.4.jar;D:\My Documents\.m2\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;D:\My Documents\.m2\com\google\inject\guice\3.0\guice-3.0.jar;D:\My Documents\.m2\javax\inject\javax.inject\1\javax.inject-1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-api\2.32.0\selenium-api-2.32.0.jar;D:\My Documents\.m2\com\google\guava\guava\14.0\guava-14.0.jar;D:\My Documents\.m2\org\json\json\20080701\json-20080701.jar;D:\My Documents\.m2\com\auto\sAutomationCore\1.3\sAutomationCore-1.3.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-java\2.32.0\selenium-java-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-android-driver\2.32.0\selenium-android-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-remote-driver\2.32.0\selenium-remote-driver-2.32.0.jar;D:\My Documents\.m2\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-chrome-driver\2.32.0\selenium-chrome-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-htmlunit-driver\2.32.0\selenium-htmlunit-driver-2.32.0.jar;D:\My Documents\.m2\net\sourceforge\htmlunit\htmlunit\2.12\htmlunit-2.12.jar;D:\My Documents\.m2\xalan\xalan\2.7.1\xalan-2.7.1.jar;D:\My Documents\.m2\xalan\serializer\2.7.1\serializer-2.7.1.jar;D:\My Documents\.m2\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpmime\4.2.3\httpmime-4.2.3.jar;D:\My Documents\.m2\net\sourceforge\htmlunit\htmlunit-core-js\2.12\htmlunit-core-js-2.12.jar;D:\My Documents\.m2\net\sourceforge\nekohtml\nekohtml\1.9.18\nekohtml-1.9.18.jar;D:\My Documents\.m2\net\sourceforge\cssparser\cssparser\0.9.9\cssparser-0.9.9.jar;D:\My Documents\.m2\org\w3c\css\sac\1.3\sac-1.3.jar;D:\My Documents\.m2\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-websocket\8.1.9.v20130131\jetty-websocket-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-util\8.1.9.v20130131\jetty-util-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-io\8.1.9.v20130131\jetty-io-8.1.9.v20130131.jar;D:\My Documents\.m2\org\eclipse\jetty\jetty-http\8.1.9.v20130131\jetty-http-8.1.9.v20130131.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpclient\4.2.1\httpclient-4.2.1.jar;D:\My Documents\.m2\org\apache\httpcomponents\httpcore\4.2.1\httpcore-4.2.1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-firefox-driver\2.32.0\selenium-firefox-driver-2.32.0.jar;D:\My Documents\.m2\commons-io\commons-io\2.2\commons-io-2.2.jar;D:\My Documents\.m2\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-ie-driver\2.32.0\selenium-ie-driver-2.32.0.jar;D:\My Documents\.m2\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;D:\My Documents\.m2\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-iphone-driver\2.32.0\selenium-iphone-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-safari-driver\2.32.0\selenium-safari-driver-2.32.0.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-support\2.32.0\selenium-support-2.32.0.jar;D:\My Documents\.m2\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;D:\My Documents\.m2\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;D:\My Documents\.m2\org\seleniumhq\selenium\selenium-server\2.32.0\selenium-server-2.32.0.jar;D:\My Documents\.m2\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;D:\My Documents\.m2\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;D:\My Documents\.m2\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;D:\My Documents\.m2\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar;D:\My Documents\.m2\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar;D:\My Documents\.m2\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;D:\My Documents\.m2\org\jdom\jdom\2.0.2\jdom-2.0.2.jar;"/>
+    <property name="java.class.path" value="D:\maven3\apache-maven-3.0.4\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_03\jre"/>
-    <property name="sun.java.command" value="C:\Users\tester\AppData\Local\Temp\surefirebooter1617140440780165402.jar C:\Users\tester\AppData\Local\Temp\surefire1992157079409921823tmp C:\Users\tester\AppData\Local\Temp\surefire2065800455601270917tmp"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s D:\maven3\apache-maven-3.0.4\conf\settings.xml test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -52,10 +50,8 @@
     <property name="java.version" value="1.7.0_03"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_03\jre\classes"/>
-    <property name="webdriver.chrome.driver" value="/D:/workspace_self/my-app/target/classes/chromedriver.exe"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="localRepository" value="D:\My Documents\.m2"/>
-    <property name="org.uncommons.reportng.title" value="My Test Suite"/>
+    <property name="maven.home" value="D:\maven3\apache-maven-3.0.4"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -63,99 +59,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.308" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" name="JIRA_ISSUE_007">
-    <failure message="Method org.testng.internal.TestNGMethod.JIRA_ISSUE_007() didn&apos;t finish within the time-out 300" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.JIRA_ISSUE_007() didn&apos;t finish within the time-out 300
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.read(SocketInputStream.java:150)
-	at java.net.SocketInputStream.read(SocketInputStream.java:121)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
-	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
-	at browser.webdriver.GenericRemoteWebElement.sendKeys(GenericRemoteWebElement.java:80)
-	at browser.webdriver.GenericRemoteWebElement.appendText(GenericRemoteWebElement.java:96)
-	at browser.webdriver.GenericRemoteWebElement.typeText(GenericRemoteWebElement.java:86)
-	at com.wonders.service.base.LoginPageService.login(LoginPageService.java:10)
-	at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(TC_JIRA_ISSUE_007.java:55)
-</failure>
-    <system-out>Finding elements with xpath -&gt; .//input[@id=&apos;login-form-username&apos; and @type=&apos;text&apos;]|.//input[@id=&apos;login-form-username&apos;]
-Clear contents from the element...
-Sending keys to the element -&gt; admin
-</system-out>
-  </testcase>
-  <testcase time="17.368" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" name="cleanup">
-    <failure message="Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
-Driver info: driver.version: GenericRemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
-Driver info: driver.version: GenericRemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
-	at browser.webdriver.GenericRemoteWebDriver.quit(GenericRemoteWebDriver.java:65)
-	at com.wonders.utils.BaseHome.Quit(BaseHome.java:33)
-	at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.cleanup(TC_JIRA_ISSUE_007.java:35)
-Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:15001 refused
-Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
-Driver info: driver.version: GenericRemoteWebDriver
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:75)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	... 37 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:15001 refused
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:701)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
-	... 38 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	... 46 more
-</failure>
-    <system-out>Finding elements with xpath -&gt; .//input[@id=&apos;login-form-username&apos; and @type=&apos;text&apos;]|.//input[@id=&apos;login-form-username&apos;]
-Clear contents from the element...
-Sending keys to the element -&gt; admin
-</system-out>
-  </testcase>
-  <testcase time="17.372" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" name="setup">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" name="JIRA_ISSUE_007">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" name="cleanup">
-    <skipped/>
-  </testcase>
+  <testcase name="JIRA_BASE_002" classname="com.wonders.testcases.base.TC_JIRA_BASE_002" time="2.003"/>
+  <testcase name="JIRA_BASE_001" classname="com.wonders.testcases.base.TC_JIRA_BASE_001" time="5.217"/>
 </testsuite>

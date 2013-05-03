@@ -1,13 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>TestNG:  Unit Test</title>
 <style type="text/css">
-table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
 border:1px solid #000099;padding:.25em .5em .25em .5em
 }
-table.param th {vertical-align:bottom}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
 td.numi,th.numi,td.numi_attn {
 text-align:right
 }
@@ -19,157 +21,32 @@ table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
 table.passed td,table tr.passedeven td {background-color: #33FF33;}
 table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
 table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
 tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
 p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
 div.shootout {padding:2em;border:3px #4854A8 solid}
 </style>
 </head>
 <body>
-<table cellspacing=0 cellpadding=0 class="param">
+<table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">34.5 seconds</td><td class="numi">search3 </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.9 seconds</td><td class="numi">checkVer test2 </td><td class="numi"></td></tr>
 </table>
-<a id="summary"></a>
-<table cellspacing=0 cellpadding=0 class="passed">
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007<td><a href="#m1"><b>cleanup</b> (project, hard, search3) </a></td><td class="numi">1</td><td>1366518388270</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007<td><a href="#m2"><b>JIRA_ISSUE_007</b> (project, hard, search3) ("issue查询")</a></td><td class="numi">1</td><td>1366518376910</td><td class="numi">306</td></tr><tr class="failedodd"><td><a href="#m3"><b>JIRA_ISSUE_007</b> (project, hard, search3) ("issue查询")</a></td><td class="numi">1</td><td>1366518376910</td><td class="numi">306</td></tr>
-<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="2">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007<td><a href="#m4"><b>cleanup</b> (project, hard, search3) </a></td><td class="numi">1</td><td>1366518394284</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>setup</b> (project, hard, search3) </a></td><td class="numi">1</td><td>1366518394283</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="2">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007<td><a href="#m6"><b>JIRA_ISSUE_007</b> (project, hard, search3) ("issue查询")</a></td><td class="numi">1</td><td>1366518394284</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m7"><b>JIRA_ISSUE_007</b> (project, hard, search3) ("issue查询")</a></td><td class="numi">1</td><td>1366518394284</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.wonders.testcases.base.TC_JIRA_BASE_001</td><td><a href="#m1"><b>JIRA_BASE_001</b> (easy, checkVer, base) ("登录系统，校验jira版本")</a></td><td class="numi">1</td><td>1367567866643</td><td class="numi">5258</td></tr>
+<tr class="passedeven"><td rowspan="1">com.wonders.testcases.base.TC_JIRA_BASE_002</td><td><a href="#m2"><b>JIRA_BASE_002</b> (easy, base, test2) ("验证alert，confirm")</a></td><td class="numi">1</td><td>1367567866680</td><td class="numi">1999</td></tr>
 </table>
 <h1>Test</h1>
-<a id="m1"></a><h2>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007:cleanup</h2>
-<div style="padding-left:3em">
-<p>Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
-Driver info: driver.version: GenericRemoteWebDriver</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
-<br/>at browser.webdriver.GenericRemoteWebDriver.quit(GenericRemoteWebDriver.java:65)
-<br/>at com.wonders.utils.BaseHome.Quit(BaseHome.java:33)
-<br/>at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.cleanup(TC_JIRA_ISSUE_007.java:35)
-<br/>33 lines not shown
-<p>Caused by org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:15001 refused
-Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_03&apos;
-Driver info: driver.version: GenericRemoteWebDriver</p>
-org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:75)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
-<br/>at browser.webdriver.GenericRemoteWebDriver.quit(GenericRemoteWebDriver.java:65)
-<br/>at com.wonders.utils.BaseHome.Quit(BaseHome.java:33)
-<br/>at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.cleanup(TC_JIRA_ISSUE_007.java:35)
-<br/>33 lines not shown
-<p>Caused by Connection to http://localhost:15001 refused</p>
-org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:701)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
-<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
-<br/>at browser.webdriver.GenericRemoteWebDriver.quit(GenericRemoteWebDriver.java:65)
-<br/>at com.wonders.utils.BaseHome.Quit(BaseHome.java:33)
-<br/>at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.cleanup(TC_JIRA_ISSUE_007.java:35)
-<br/>33 lines not shown
-<p>Caused by Connection refused: connect</p>
-java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
-<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-<br/>at java.net.Socket.connect(Socket.java:579)
-<br/>at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-<br/>at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-<br/>at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-<br/>at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:701)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
-<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
-<br/>at browser.webdriver.GenericRemoteWebDriver.quit(GenericRemoteWebDriver.java:65)
-<br/>at com.wonders.utils.BaseHome.Quit(BaseHome.java:33)
-<br/>at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.cleanup(TC_JIRA_ISSUE_007.java:35)
-<br/>33 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007:JIRA_ISSUE_007</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">Summary,Environment</td>
-<td style="padding-left:.5em;padding-right:2em">Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31</td>
-<td style="padding-left:.5em;padding-right:2em">In Progress</td>
-<td style="padding-left:.5em;padding-right:2em">admin</td>
-<td style="padding-left:.5em;padding-right:2em">15</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="5">
-<p>Method org.testng.internal.TestNGMethod.JIRA_ISSUE_007() didn&apos;t finish within the time-out 300</p>
-java.net.SocketInputStream.socketRead0(Native Method)
-<br/>at java.net.SocketInputStream.read(SocketInputStream.java:150)
-<br/>at java.net.SocketInputStream.read(SocketInputStream.java:121)
-<br/>at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
-<br/>at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
-<br/>at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
-<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
-<br/>at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
-<br/>at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
-<br/>at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
-<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
-<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
-<br/>at browser.webdriver.GenericRemoteWebElement.sendKeys(GenericRemoteWebElement.java:80)
-<br/>at browser.webdriver.GenericRemoteWebElement.appendText(GenericRemoteWebElement.java:96)
-<br/>at browser.webdriver.GenericRemoteWebElement.typeText(GenericRemoteWebElement.java:86)
-<br/>at com.wonders.service.base.LoginPageService.login(LoginPageService.java:10)
-<br/>at com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(TC_JIRA_ISSUE_007.java:55)
-<br/>14 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007:cleanup</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007:setup</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007:JIRA_ISSUE_007</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">Summary,Environment</td>
-<td style="padding-left:.5em;padding-right:2em"></td>
-<td style="padding-left:.5em;padding-right:2em">In Progress,Open,Reopened,Resolved,Closed</td>
-<td style="padding-left:.5em;padding-right:2em">user1</td>
-<td style="padding-left:.5em;padding-right:2em">1</td>
+<h2 id="m1">com.wonders.testcases.base.TC_JIRA_BASE_001:JIRA_BASE_001</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>v5.0.7</td>
 </tr>
 </table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.wonders.testcases.base.TC_JIRA_BASE_002:JIRA_BASE_002</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -2,7 +2,7 @@
 
 <html>
   <head>
-  <title>TestNG new reports</title>
+  <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\workspace_self\my-app\testng.xml</span>
+                    <span>D:\workspace_self\my-appThread\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>3 groups</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,35 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" hash-for-method="JIRA_ISSUE_007(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, ad...)">JIRA_ISSUE_007(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, ad...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.wonders.testcases.base.TC_JIRA_BASE_001" hash-for-method="JIRA_BASE_001(v5.0.7)">JIRA_BASE_001(v5.0.7)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007" hash-for-method="JIRA_ISSUE_007(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1)">JIRA_ISSUE_007(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.wonders.testcases.base.TC_JIRA_BASE_002" hash-for-method="JIRA_BASE_002">JIRA_BASE_002</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,87 +121,98 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.wonders.testcases.base.TC_JIRA_BASE_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JIRA_ISSUE_007(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, ad...)">
-                  </a> <!-- JIRA_ISSUE_007(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, ad...) -->
-                  <span class="method-name">JIRA_ISSUE_007</span>
-                  <span class="parameters">(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, admin, 15)</span>
-                  <div class="stack-trace"><b>"Method org.testng.internal.TestNGMethod.JIRA_ISSUE_007() didn't finish within the time-out 300"</b><br>java.net.SocketInputStream.socketRead0(Native Method)<br>java.net.SocketInputStream.read(SocketInputStream.java:150)<br>java.net.SocketInputStream.read(SocketInputStream.java:121)<br>org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)<br>org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)<br>org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)<br>org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)<br>org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)<br>org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)<br>org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)<br>org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)<br>org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)<br>org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)<br>org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)<br>org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)<br>org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)<br>org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)<br>org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br>org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)<br>browser.webdriver.GenericRemoteWebElement.sendKeys(GenericRemoteWebElement.java:80)<br>browser.webdriver.GenericRemoteWebElement.appendText(GenericRemoteWebElement.java:96)<br>browser.webdriver.GenericRemoteWebElement.typeText(GenericRemoteWebElement.java:86)<br>com.wonders.service.base.LoginPageService.login(LoginPageService.java:10)<br>com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(TC_JIRA_ISSUE_007.java:55)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:601)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br>org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)<br>java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)<br>java.util.concurrent.FutureTask.run(FutureTask.java:166)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)<br>java.lang.Thread.run(Thread.java:722)<br>
-</div> <!-- stack-trace -->
+                  <a name="JIRA_BASE_002">
+                  </a> <!-- JIRA_BASE_002 -->
+                  <span class="method-name">JIRA_BASE_002</span>
+                  <em>
+(验证alert，confirm)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.wonders.testcases.base.TC_JIRA_BASE_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JIRA_ISSUE_007(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1)">
-                  </a> <!-- JIRA_ISSUE_007(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1) -->
-                  <span class="method-name">JIRA_ISSUE_007</span>
-                  <span class="parameters">(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1)</span>
+                  <a name="JIRA_BASE_001(v5.0.7)">
+                  </a> <!-- JIRA_BASE_001(v5.0.7) -->
+                  <span class="method-name">JIRA_BASE_001</span>
+                  <span class="parameters">(v5.0.7)</span>
+                  <em>
+(登录系统，校验jira版本)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\workspace_self\my-app\testng.xml</span>
+            <span class="header-content">D:\workspace_self\my-appThread\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.wonders.utils.TestngListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.wonders.core.TestngListener&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.testng.reporters.SuiteHTMLReporter&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Test&quot; preserve-order=&quot;true&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;jiraVer&quot; value=&quot;v5.0.7&quot;/&gt;
-    &lt;parameter name=&quot;adminUser&quot; value=&quot;admin&quot;/&gt;
-    &lt;parameter name=&quot;adminPW&quot; value=&quot;admin&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;search3&quot;/&gt;
+        &lt;include name=&quot;checkVer&quot;/&gt;
+        &lt;include name=&quot;test2&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;packages&gt;
       &lt;package name=&quot;com.wonders.*&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.wonders.tool.autoGenCode.CreateFile&quot;/&gt;
+      &lt;class name=&quot;com.wonders.tool.autoGenCode.GenCode&quot;/&gt;
+      &lt;class name=&quot;com.wonders.tool.autoGenCode.PreContext&quot;/&gt;
       &lt;class name=&quot;com.wonders.configuration.Config&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.AbstractSpringTest&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.Alter&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.Assertion&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.BaseHome&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.GenericWebDriverManager&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.ScreenShot&quot;/&gt;
+      &lt;class name=&quot;com.wonders.core.TestngListener&quot;/&gt;
       &lt;class name=&quot;com.wonders.dao.issueFields.IssueFieldsSearchDao&quot;/&gt;
       &lt;class name=&quot;com.wonders.pagewrapper.base.DatePicker&quot;/&gt;
       &lt;class name=&quot;com.wonders.pagewrapper.base.LoginPage&quot;/&gt;
       &lt;class name=&quot;com.wonders.pagewrapper.base.MainPage&quot;/&gt;
       &lt;class name=&quot;com.wonders.pagewrapper.base.SelfPage&quot;/&gt;
-      &lt;class name=&quot;com.wonders.pagewrapper.issueFields.CreateIssueFields&quot;/&gt;
-      &lt;class name=&quot;com.wonders.pagewrapper.issueFields.LocalHelpPage&quot;/&gt;
-      &lt;class name=&quot;com.wonders.pagewrapper.issueFields.SearchIssue&quot;/&gt;
-      &lt;class name=&quot;com.wonders.pagewrapper.issueFields.WikiHelpPage&quot;/&gt;
+      &lt;class name=&quot;com.wonders.pagewrapper.issue.CreateIssueFields&quot;/&gt;
+      &lt;class name=&quot;com.wonders.pagewrapper.issue.LocalHelpPage&quot;/&gt;
+      &lt;class name=&quot;com.wonders.pagewrapper.issue.MainPageService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.pagewrapper.issue.SearchIssue&quot;/&gt;
+      &lt;class name=&quot;com.wonders.pagewrapper.issue.WikiHelpPage&quot;/&gt;
       &lt;class name=&quot;com.wonders.service.base.LoginPageService&quot;/&gt;
       &lt;class name=&quot;com.wonders.service.base.MainPageService&quot;/&gt;
       &lt;class name=&quot;com.wonders.service.base.SelfPageService&quot;/&gt;
-      &lt;class name=&quot;com.wonders.service.issueFields.CreateIssueFieldsService&quot;/&gt;
-      &lt;class name=&quot;com.wonders.service.issueFields.LocalHelpPageService&quot;/&gt;
-      &lt;class name=&quot;com.wonders.service.issueFields.SearchIssueResultService&quot;/&gt;
-      &lt;class name=&quot;com.wonders.service.issueFields.SearchIssueService&quot;/&gt;
-      &lt;class name=&quot;com.wonders.service.issueFields.WikiHelpPageService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.service.issue.CreateIssueFieldsService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.service.issue.LocalHelpPageService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.service.issue.SearchIssueResultService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.service.issue.SearchIssueService&quot;/&gt;
+      &lt;class name=&quot;com.wonders.service.issue.WikiHelpPageService&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.base.PRE_ACTION&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.base.TC_JIRA_BASE_001&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.base.TC_JIRA_BASE_002&quot;/&gt;
@@ -228,22 +230,16 @@
       &lt;class name=&quot;com.wonders.testcases.issueFields.TC_JIRA_ISSUE_004&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.issueFields.TC_JIRA_ISSUE_005&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006&quot;/&gt;
-      &lt;class name=&quot;com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007&quot;/&gt;
       &lt;class name=&quot;com.wonders.testcases.issueFields.WebTestFactory&quot;/&gt;
       &lt;class name=&quot;com.wonders.testData.ReadTestData&quot;/&gt;
       &lt;class name=&quot;com.wonders.testData.ReadTestDataByXls&quot;/&gt;
       &lt;class name=&quot;com.wonders.testData.ReadTestDataByXlsx&quot;/&gt;
       &lt;class name=&quot;com.wonders.testData.ReadTestDataByXml&quot;/&gt;
-      &lt;class name=&quot;com.wonders.utils.AbstractSpringTest&quot;/&gt;
-      &lt;class name=&quot;com.wonders.utils.Assertion&quot;/&gt;
-      &lt;class name=&quot;com.wonders.utils.BaseHome&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.ChooseUnit&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.Common&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.DateManage&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.GetAccessory&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.RandomManage&quot;/&gt;
-      &lt;class name=&quot;com.wonders.utils.ScreenShot&quot;/&gt;
-      &lt;class name=&quot;com.wonders.utils.TestngListener&quot;/&gt;
       &lt;class name=&quot;com.wonders.utils.WebTable&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -258,7 +254,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (52 classes)</span>
+                <span class="test-name">Test (57 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,26 +265,42 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">hard</span>
+              <span class="test-group-name">base</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JIRA_ISSUE_007</span>
+                <span class="method-in-group-name">JIRA_BASE_001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">JIRA_BASE_002</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">project</span>
+              <span class="test-group-name">checkVer</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JIRA_ISSUE_007</span>
+                <span class="method-in-group-name">JIRA_BASE_001</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">search3</span>
+              <span class="test-group-name">easy</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JIRA_ISSUE_007</span>
+                <span class="method-in-group-name">JIRA_BASE_001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">JIRA_BASE_002</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">test2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">JIRA_BASE_002</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -310,18 +322,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JIRA_ISSUE_007')
-data.setCell(0, 2, 'com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007')
-data.setCell(0, 3, 306);
+data.setCell(0, 1, 'JIRA_BASE_001')
+data.setCell(0, 2, 'com.wonders.testcases.base.TC_JIRA_BASE_001')
+data.setCell(0, 3, 5258);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'JIRA_ISSUE_007')
-data.setCell(1, 2, 'com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'JIRA_BASE_002')
+data.setCell(1, 2, 'com.wonders.testcases.base.TC_JIRA_BASE_002')
+data.setCell(1, 3, 1999);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 306 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -336,90 +348,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">18 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_003</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_ISSUE_003</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_005</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_005</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_007</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_007</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_006</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_006</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testServer</span>
-                <br/>
-                <span class="ignored-method-name">testServer</span>
-                <br/>
-                <span class="ignored-method-name">testServer</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_005</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_ISSUE_005</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_002</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_002</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_009</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_009</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_001</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_001</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_004</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_ISSUE_004</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_008</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_BASE_008</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_003</span>
               <div class="ignored-methods-div">
@@ -435,13 +366,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_001</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">JIRA_ISSUE_001</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_002</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">JIRA_ISSUE_002</span>
@@ -449,9 +373,83 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_006</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testServer</span>
+                <br/>
+                <span class="ignored-method-name">testServer</span>
+                <br/>
+                <span class="ignored-method-name">testServer</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_001</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_ISSUE_001</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_006</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_BASE_006</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_007</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_BASE_007</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_008</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_BASE_008</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_005</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_BASE_005</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_004</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_ISSUE_004</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_005</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_ISSUE_005</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_004</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">JIRA_BASE_004</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_003</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_ISSUE_003</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.wonders.testcases.base.TC_JIRA_BASE_009</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">JIRA_BASE_009</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -470,54 +468,39 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">springTestContextBeforeTestClass</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(java.lang.String,java...)</span>
-                <span class="method-start">1210 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.wonders.testcases.base.TC_JIRA_BASE_002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">1211 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">JIRA_ISSUE_007(Summary,Environment, Summary_20130326165637219_a3e347e1-d849-4bd8-af1f-aced38485d31, In Progress, ad...)</span>
-                <span class="method-start">17114 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">cleanup</span>
-                <span class="method-start">28474 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">springTestContextAfterTestMethod(public void com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(java.lang.String,java...)</span>
-                <span class="method-start">34486 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.wonders.testcases.base.TC_JIRA_BASE_001</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(java.lang.String,java...)</span>
-                <span class="method-start">34487 ms</span>
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">JIRA_ISSUE_007(Summary,Environment, , In Progress,Open,Reopened,Resolved,Closed, user1, 1)</span>
-                <span class="method-start">34488 ms</span>
+                <span class="method-name">JIRA_BASE_001(v5.0.7)</span>
+                <span class="method-start">11552 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">34488 ms</span>
-              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.wonders.testcases.base.TC_JIRA_BASE_002</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">JIRA_BASE_002</span>
+                <span class="method-start">11589 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">springTestContextAfterTestMethod(public void com.wonders.testcases.issueFields.TC_JIRA_ISSUE_007.JIRA_ISSUE_007(java.lang.String,java...)</span>
-                <span class="method-start">34488 ms</span>
+                <span class="method-name">cleanup</span>
+                <span class="method-start">13590 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.wonders.testcases.base.TC_JIRA_BASE_001</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">16811 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
