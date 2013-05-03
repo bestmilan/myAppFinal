@@ -43,4 +43,11 @@ Q9:
 	java.lang.NoClassDefFoundError: org/apache/tools/ant/Task
 A9:
 	重新生成testng.xml
+Q10:
+	maven-surefire指定testng多线程无效
+A10:
+	maven-surefire版本和junit、testng版本不匹配
+Q11:
+	jenkins代码无法编译
+A11:
 	
